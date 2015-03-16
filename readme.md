@@ -2,7 +2,7 @@ Local Labels for the Plan 9 Assembler
 =====================================
 
 I added local labels to the Plan 9 assembler.  A good example is
-progp.s which generates the first 500 prime numbers.
+1.3.2progp.s which generates the first 500 prime numbers.
 
 You can choose numbers 0-9 for your labels and the syntax is:
 
