@@ -10,5 +10,5 @@ You can choose numbers 0-9 for your labels and the syntax is:
 * 1(B) to jump backwards to the closest 1(H)
 * 1(F) to jump forwards to the closest 1(H)
 
-The only changes made were to the files in 6a, the other files are only needed
+The only changes made were to the files in 6a, the other directories are only needed
 to compile.
