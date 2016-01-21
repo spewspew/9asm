@@ -462,6 +462,15 @@ omem:
 		$$.scale = $8;
 		checkscale($$.scale);
 	}
+|	con '(' LLREG ')' '(' LLREG ')'
+	{
+		$$ = nullgen;
+		$$.type = D_INDIR+$3;
+		$$.offset = $1;
+		$$.index = $6;
+		$$.scale = 1;
+		checkscale($$.scale);
+	}
 |	'(' LLREG ')'
 	{
 		$$ = nullgen;
@@ -486,6 +495,14 @@ omem:
 		$$.type = D_INDIR+$2;
 		$$.index = $5;
 		$$.scale = $7;
+		checkscale($$.scale);
+	}
+|	'(' LLREG ')' '(' LLREG ')'
+	{
+		$$ = nullgen;
+		$$.type = D_INDIR+$2;
+		$$.index = $5;
+		$$.scale = 1;
 		checkscale($$.scale);
 	}
 
